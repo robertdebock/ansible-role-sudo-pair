@@ -1,0 +1,19 @@
+digraph PhiloDilemma {
+  label = "Robert de Bock" ;
+  overlap=false
+  {
+    "sudo_pair" [fillcolor=yellow style=filled penwidth=3]
+    "robertdebock.bootstrap" [fillcolor=green style=filled]
+    "robertdebock.buildtools" [fillcolor=green style=filled]
+    "robertdebock.cargo" [fillcolor=green style=filled]
+    "robertdebock.core_dependencies" [fillcolor=green style=filled]
+    "robertdebock.epel" [fillcolor=green style=filled]
+    "robertdebock.git" [fillcolor=green style=filled]
+  }
+  "sudo_pair" -> "robertdebock.bootstrap"
+  "sudo_pair" -> "robertdebock.buildtools"
+  "sudo_pair" -> "robertdebock.cargo"
+  "sudo_pair" -> "robertdebock.core_dependencies"
+  "sudo_pair" -> "robertdebock.epel"
+  "sudo_pair" -> "robertdebock.git"
+}
